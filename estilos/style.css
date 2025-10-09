@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/* 
-    Paleta de cores
-    verde: #49a09d
-    lilás: #5f2c82
-*/
-
 :root {
     --cor_verde: #49a09d;
     --cor_lilas: #5f2c82;
@@ -62,7 +56,7 @@ section#login > div#formulario {
 
 div#formulario h1 {
     text-align: center;
-    margin-bottom: 10cpx;
+    margin-bottom: 10px;
 }
 
 div#formulario > p {
@@ -71,10 +65,11 @@ div#formulario > p {
 
 form > div.campo {
     background-color: var(--cor_lilas);
+    border:2px solid var(--cor_lilas) ;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -82,6 +77,28 @@ div.campo > label {
     display: none;
 }
 
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #64c7c4;
+    font-size: 1em;
+    width:  calc(100% - 44px);
+    transform: translateY(-12px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
 
 
 form > input[type=submit] {
